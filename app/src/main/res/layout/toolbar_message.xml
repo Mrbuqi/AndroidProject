@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:navigationIcon="?attr/homeAsUpIndicator">
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabIndicatorColor="#ADBE107E"
+            android:background="@color/colorPrimaryDark"
+            app:tabMode="scrollable"/>
+    </android.support.design.widget.AppBarLayout>
+
+</merge>
